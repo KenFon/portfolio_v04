@@ -47,6 +47,13 @@ body {
     transform: translateX(-1vmax);
 }
 
+.grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(99, 1vw);
+    grid-template-rows: repeat(99, 1vh);
+}
+
 /*gestion des anims des liens*/
 
 a {

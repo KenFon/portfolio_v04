@@ -8,9 +8,8 @@ font-family: 'Roboto', sans-serif; pour les textes.
 
 
 /**************************************************************************************
-                                GESTION DU MENU
+                                GESTION DU MENU BURGER
 **************************************************************************************/
-
 .anm-menu, .anm-background {
     position: fixed;
     top: 0;
@@ -25,21 +24,18 @@ font-family: 'Roboto', sans-serif; pour les textes.
     transition: opacity 0.5s;
     
 }
-
 .anm-menu {
     z-index: 9010;
     background:var(--white);
     font-size: 20px;
     text-align: center;
 }
-
 .anm-background {
     z-index: 9009;
     background-size: cover;
     background-position: center;
     background-color: --var(white);
 }
-
 .anm-container {
     width: 70vw;
     max-width: 100%;
@@ -49,7 +45,6 @@ font-family: 'Roboto', sans-serif; pour les textes.
     align-items: center;
     padding: 0 30px;
 }
-
 .anm-container a {
     width: 100%;
     background: var(--white);
@@ -76,12 +71,11 @@ font-family: 'Roboto', sans-serif; pour les textes.
     z-index: 9020;
     top: 10px;
     right: 15px;
-    padding: 20px;
+    padding: 15px;
     cursor: pointer;
     color:var(--red);
     border: 1px solid black;
 }
-
 .anm-menu-button *, .anm-menu-button *:before, .anm-menu-button *:after {
     -webkit-transition: all 200ms 0s ease-in-out;
     -moz-transition: all 200ms 0s ease-in-out;
@@ -125,4 +119,32 @@ font-family: 'Roboto', sans-serif; pour les textes.
 }
 .anm-fade-in .anm-menu-label:after {
     transform: rotate(-45deg);
+}
+.letter-red{
+    color:var(--red);
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color:black;
+}
+.text-passion{
+    font-size: 4vmax;
+    grid-column: 3 / 45;
+    grid-row: 20/45;
+    opacity: 0.87;
+}
+.text-role{
+    font-size: 15vmax;
+    transform:rotate(-30deg);
+    grid-column: 5/100;
+    grid-row: 49/99;
+    opacity: 0.87;
+}
+.web{
+    white-space: nowrap;
+    margin-top: 15px;
+    transform: translateX(-85px);
+}
+.logo{
+   position:absolute;
+   top:10px;
+   left:15px; 
 }
