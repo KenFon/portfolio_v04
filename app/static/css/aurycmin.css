@@ -1,0 +1,128 @@
+/* Rappel des fonts !  
+
+font-family: 'Oswald', sans-serif; pour les titres
+
+font-family: 'Roboto', sans-serif; pour les textes.
+
+*/
+
+
+/**************************************************************************************
+                                GESTION DU MENU
+**************************************************************************************/
+
+.anm-menu, .anm-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    
+}
+
+.anm-menu {
+    z-index: 9010;
+    background:var(--white);
+    font-size: 20px;
+    text-align: center;
+}
+
+.anm-background {
+    z-index: 9009;
+    background-size: cover;
+    background-position: center;
+    background-color: --var(white);
+}
+
+.anm-container {
+    width: 70vw;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.anm-container a {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--red);
+    color: white;
+    border-radius: 0px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+.anm-container a:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, .3);
+}
+.anm-show {
+    display: flex !important;
+}
+.anm-fade-in {
+    opacity: 1;
+}
+.anm-menu-button {
+    position: absolute;
+    z-index: 9020;
+    top: 10px;
+    right: 15px;
+    padding: 20px;
+    cursor: pointer;
+    color:var(--red);
+    border: 1px solid black;
+}
+
+.anm-menu-button *, .anm-menu-button *:before, .anm-menu-button *:after {
+    -webkit-transition: all 200ms 0s ease-in-out;
+    -moz-transition: all 200ms 0s ease-in-out;
+    -o-transition: all 200ms 0s ease-in-out;
+    transition: all 200ms 0s ease-in-out;
+}
+.anm-menu-label {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+}
+.anm-menu-label:before, .anm-menu-label:after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 0;
+    height: 2px;
+    width: 24px;
+    background-color:var(--red);
+}
+.anm-menu-label:before {
+    box-shadow: 0 -8px 0 var(--red);
+}
+.anm-menu-label:after {
+    box-shadow: 0 8px 0 var(--red);
+}
+.anm-fade-in.anm-menu-button {
+    color: var(--red);
+}
+.anm-fade-in .anm-menu-label {
+    position: relative;
+}
+.anm-fade-in .anm-menu-label:before, .anm-fade-in .anm-menu-label:after {
+    top: -6px;
+    left: 0;
+    box-shadow: 0 0;
+    background-color:var(--red);
+}
+.anm-fade-in .anm-menu-label:before {
+    transform: rotate(45deg);
+}
+.anm-fade-in .anm-menu-label:after {
+    transform: rotate(-45deg);
+}
