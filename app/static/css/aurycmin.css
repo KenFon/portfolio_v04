@@ -74,7 +74,7 @@ font-family: 'Roboto', sans-serif; pour les textes.
     padding: 15px;
     cursor: pointer;
     color:var(--red);
-    border: 1px solid black;
+    
 }
 .anm-menu-button *, .anm-menu-button *:before, .anm-menu-button *:after {
     -webkit-transition: all 200ms 0s ease-in-out;
@@ -120,6 +120,18 @@ font-family: 'Roboto', sans-serif; pour les textes.
 .anm-fade-in .anm-menu-label:after {
     transform: rotate(-45deg);
 }
+/*************************************************************
+                CSS générale
+**************************************************************/
+.separator{
+    margin-left: 5%;
+    width: 90%;
+}
+
+
+/*************************************************************
+                CSS page de home
+***************************************************************/
 .letter-red{
     color:var(--red);
     -webkit-text-stroke: 0.5px;
@@ -133,9 +145,8 @@ font-family: 'Roboto', sans-serif; pour les textes.
 }
 .text-role{
     font-size: 15vmax;
-    transform:rotate(-30deg);
     grid-column: 5/100;
-    grid-row: 49/99;
+    grid-row: 45/80;
     opacity: 0.87;
 }
 .web{
@@ -145,6 +156,24 @@ font-family: 'Roboto', sans-serif; pour les textes.
 }
 .logo{
    position:absolute;
-   top:10px;
+   top:17px;
    left:15px; 
+}
+.logo img{
+    height:6vmax;
+}
+
+/************************************************************************
+                    CSS de me.html
+*************************************************************************/
+.text-me{
+    font-weight: 400;
+}
+.text-name{
+    color:black;
+}
+.text-stroke-red {
+    -webkit-text-stroke: 0px;
+    color: var(--red);
+    font-family: roboto;
 }

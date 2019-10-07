@@ -44,7 +44,6 @@ body {
     height: 3px;
     background: black;
     opacity: 0.99;
-    transform: translateX(-1vmax);
 }
 
 .grid {
@@ -135,7 +134,6 @@ a.email{
 .home {
         width: 100vw;
         height: 100vh;
-        margin-bottom: 18vh;
 }
 
     .navBar {
@@ -210,14 +208,6 @@ a.email{
     -webkit-text-stroke-color: black;
     color: var(--white);
     font-family: robotobold;
-}
-
-@media (max-width: 992px) {
-    .text-stroke-red {
-        color: var(--red);
-        -webkit-text-stroke: 0.2px;
-        -webkit-text-stroke-color: black;
-    }
 }
 
 .text-stroke-red {
