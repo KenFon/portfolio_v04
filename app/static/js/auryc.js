@@ -169,6 +169,8 @@ window.addEventListener('keydown', function (e) {
 });
 
 /* Gere les projects */
+
+
 var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   direction: 'vertical',
   loop: false,
