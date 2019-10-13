@@ -1,0 +1,9 @@
+FROM archlinux/base
+MAINTAINER byidi <ken.fontaine@outlook.fr>
+
+RUN pacman -Syu --noconfirm python python-pip
+RUN locale-gen
+WORKDIR /app
+
+COPY ./requirements.txt /opt/requirements.txt
+RUN pip install -r /opt/requirements.txt
